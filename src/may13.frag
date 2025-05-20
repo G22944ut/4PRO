@@ -13,7 +13,7 @@ float sdfSphere(vec3 pt, vec3 c, float r){
 }
 
 float sdf(vec3 pt){
-    return sdfSphere(pt, vec3(0.0, 0.0, 0.0), 1.0);
+    return sdfSphere(pt, vec3(0.0, 0.0, 0.0), radius);
 }
 
 vec3 rayStep(vec3 pt, vec3 ray){
