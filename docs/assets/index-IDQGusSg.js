@@ -4043,7 +4043,7 @@ void main(){
     vec3 updir = vec3(0.0, 1.0, 0.0);
     float depth = 5.0;
     vec3 rightdir = cross(cdir, updir);
-    vec3 ray = p.x*rigthdir + p.y*updir + depth*cdir;
+    vec3 ray = p.x*rightdir + p.y*updir + depth*cdir;
     ray = normalize(ray); //長さを１にする
 
     vec3 pt = rayMarching(camera, ray);
